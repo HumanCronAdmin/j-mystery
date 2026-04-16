@@ -22,44 +22,44 @@
 </head>
 <body>
 <nav class="nav">
-  <a href="index.html" class="nav-brand">J<span>Mystery</span></a>
-  <div class="nav-links">
-    <a href="database.html">Database</a>
-    <a href="#guides">Guides</a>
-    <a href="#about">About</a>
-  </div>
+ <a href="index.html" class="nav-brand">J<span>Mystery</span></a>
+ <div class="nav-links">
+ <a href="database.html">Database</a>
+ <a href="#guides">Guides</a>
+ <a href="#about">About</a>
+ </div>
 </nav>
 <section class="hero">
-  <h1>Unlock Japanese <em>Mystery</em>.</h1>
-  <p>The definitive guide to translated Japanese detective fiction. From locked-room puzzles to social crime, find your next obsession.</p>
-  <a href="database.html" class="btn btn-primary">Browse the Database</a>
+ <h1>Unlock Japanese <em>Mystery</em>.</h1>
+ <p>The definitive guide to translated Japanese detective fiction. From locked-room puzzles to social crime, find your next obsession.</p>
+ <a href="database.html" class="btn btn-primary">Browse the Database</a>
 </section>
 <section class="section">
-  <h2 class="section-title">The Problem</h2>
-  <div class="problem-grid" id="problems"></div>
+ <h2 class="section-title">The Problem</h2>
+ <div class="problem-grid" id="problems"></div>
 </section>
 <section class="section" style="background:var(--dark);color:#FFF;max-width:none;padding:48px 16px">
-  <div class="stats-row" id="stats"></div>
+ <div class="stats-row" id="stats"></div>
 </section>
 <section class="section" style="text-align:center">
-  <h2 class="section-title">Ready to Dive In?</h2>
-  <p style="color:var(--muted);margin-bottom:24px;max-width:480px;margin-left:auto;margin-right:auto">Filter by subgenre, era, and availability. Every listing includes translator credits, awards, and expert notes.</p>
-  <a href="database.html" class="btn btn-primary">Explore the Database</a>
+ <h2 class="section-title">Ready to Dive In?</h2>
+ <p style="color:var(--muted);margin-bottom:24px;max-width:480px;margin-left:auto;margin-right:auto">Filter by subgenre, era, and availability. Every listing includes translator credits, awards, and expert notes.</p>
+ <a href="database.html" class="btn btn-primary">Explore the Database</a>
 </section>
 <footer class="footer" id="about">
-  <p>JMystery is an open-source curation project. Dedicated to making Japanese detective fiction accessible worldwide.</p>
-  <p style="margin-top:8px"><a href="https://github.com/humancronadmin">GitHub</a></p>
+ <p>JMystery is an open-source curation project. Dedicated to making Japanese detective fiction accessible worldwide.</p>
+ <p style="margin-top:8px"><a href="https://github.com/humancronadmin">GitHub</a></p>
 </footer>
 <script>
 const problems=[
-  {icon:"\uD83D\uDD0D",title:"Many masterpieces aren't translated yet",desc:"Thousands of acclaimed Japanese mysteries exist, but only a fraction have been translated into English. Finding what's actually available is half the battle."},
-  {icon:"\uD83E\uDDED",title:"Hard to know where to start",desc:"With decades of rich tradition from Edogawa Ranpo to Keigo Higashino, newcomers face an overwhelming catalog with no clear entry point."},
-  {icon:"\uD83C\uDFAD",title:"Subgenres like honkaku and shakai-ha are confusing",desc:"Japanese mystery has unique subgenres with no Western equivalent. Understanding what honkaku or shakai-ha means is key to finding books you'll love."}
+ {icon:"\uD83D\uDD0D",title:"Many masterpieces aren't translated yet",desc:"Thousands of acclaimed Japanese mysteries exist, but only a fraction have been translated into English. Finding what's available is half the battle."},
+ {icon:"\uD83E\uDDED",title:"Hard to know where to start",desc:"With decades of rich tradition from Edogawa Ranpo to Keigo Higashino, newcomers face an overwhelming catalog with no clear entry point."},
+ {icon:"\uD83C\uDFAD",title:"Subgenres like honkaku and shakai-ha are confusing",desc:"Japanese mystery has unique subgenres with no Western equivalent. Understanding what honkaku or shakai-ha means is key to finding books you'll love."}
 ];
 const stats=[
-  {num:"35+",label:"Novels"},
-  {num:"20+",label:"Authors"},
-  {num:"All Subgenres",label:"Covered"}
+ {num:"35+",label:"Novels"},
+ {num:"20+",label:"Authors"},
+ {num:"All Subgenres",label:"Covered"}
 ];
 document.getElementById("problems").innerHTML=problems.map(p=>`<div class="problem-card"><div class="icon">${p.icon}</div><h3>${p.title}</h3><p>${p.desc}</p></div>`).join("");
 document.getElementById("stats").innerHTML=stats.map(s=>`<div class="stat"><div class="num">${s.num}</div><div class="label">${s.label}</div></div>`).join("");
